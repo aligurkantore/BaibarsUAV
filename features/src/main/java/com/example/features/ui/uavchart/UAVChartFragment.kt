@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.core.graphics.toColorInt
 import com.example.core.base.BaseFragment
 import com.example.core.utils.navigateBack
-import com.example.core.utils.navigateSafe
 import com.example.features.R
 import com.example.features.databinding.FragmentUAVChartBinding
 import com.github.mikephil.charting.data.Entry

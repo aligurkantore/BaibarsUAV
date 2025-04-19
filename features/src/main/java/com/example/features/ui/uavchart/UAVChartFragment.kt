@@ -1,10 +1,14 @@
 package com.example.features.ui.uavchart
 
 import android.graphics.Color
+import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.graphics.toColorInt
 import com.example.core.base.BaseFragment
+import com.example.core.utils.navigateBack
+import com.example.core.utils.navigateSafe
 import com.example.features.R
 import com.example.features.databinding.FragmentUAVChartBinding
 import com.github.mikephil.charting.data.Entry
@@ -25,6 +29,11 @@ class UAVChartFragment : BaseFragment<FragmentUAVChartBinding, UAVChartViewModel
         container: ViewGroup?
     ): FragmentUAVChartBinding {
         return FragmentUAVChartBinding.inflate(inflater)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        navigateToBack()
     }
 
     override fun observeViewModel() {
@@ -82,6 +91,12 @@ class UAVChartFragment : BaseFragment<FragmentUAVChartBinding, UAVChartViewModel
 
         chart.notifyDataSetChanged()
         chart.invalidate()
+    }
+
+    private fun navigateToBack(){
+        binding.buttonBack.setOnClickListener {
+            navigateBack()
+        }
     }
 
 }

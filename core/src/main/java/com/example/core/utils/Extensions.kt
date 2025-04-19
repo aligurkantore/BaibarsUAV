@@ -17,6 +17,10 @@ fun Fragment.navigateSafe(id: Int) {
     findNavController().navigate(id)
 }
 
+fun Fragment.navigateBack() {
+    findNavController().popBackStack()
+}
+
 fun Float.formatToTwoDecimalPlaces(): String {
     return String.format(Locale.getDefault(), "%.2f", this)
 }

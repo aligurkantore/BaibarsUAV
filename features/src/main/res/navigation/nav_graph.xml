@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/UAVFragment">
+
+    <fragment
+        android:id="@+id/UAVFragment"
+        android:name="com.example.features.ui.uav.UAVFragment"
+        android:label="fragment_u_a_v"
+        tools:layout="@layout/fragment_u_a_v">
+        <action
+            android:id="@+id/action_UAVFragment_to_UAVChartFragment"
+            app:destination="@id/UAVChartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/UAVChartFragment"
+        android:name="com.example.features.ui.uavchart.UAVChartFragment"
+        android:label="fragment_u_a_v_chart"
+        tools:layout="@layout/fragment_u_a_v_chart" >
+
+    <argument
+        android:name="battery"
+        app:argType="string" />
+    <argument
+        android:name="altitude"
+        app:argType="string" />
+    <argument
+        android:name="gps"
+        app:argType="string" />
+    <argument
+        android:name="flightTime"
+        app:argType="string" />
+        <action
+            android:id="@+id/action_UAVChartFragment_to_UAVFragment"
+            app:destination="@id/UAVFragment" />
+
+    </fragment>
+</navigation>

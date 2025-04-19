@@ -1,0 +1,17 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="uav_ground_control_station">UAV Ground Control Station</string>
+    <string name="battery_voltage">Battery Voltage: </string>
+    <string name="altitude">Altitude: </string>
+    <string name="gps">GPS: </string>
+    <string name="flight_time">Flight Time: </string>
+    <string name="battery_voltage_value">%.2f V</string>
+    <string name="altitude_value">%d m</string>
+    <string name="gps_value">%1$.6f, %2$.6f</string>
+    <string name="flight_time_value">%s</string>
+    <string name="uav_chart_desc">UAV Latitude Longitude Chart</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="gps_data">GPS Data</string>
+</resources>

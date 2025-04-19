@@ -16,9 +16,9 @@ class DataRepository : UAVRepository {
 
     override fun startDataFlow(): Flow<UAVData> = flow {
         var lastSensorUpdateTime = 0L
-        var currentAltitude = (100..150).random()
-        var currentLatitude = 41.015137 + Random.nextDouble(-0.01, 0.01)
-        var currentLongitude = 28.979530 + Random.nextDouble(-0.01, 0.01)
+        var currentAltitude = (10..25).random()
+        var currentLatitude = 36 + Random.nextDouble(-0.01, 0.01)
+        var currentLongitude = 34 + Random.nextDouble(-0.01, 0.01)
         var currentBattery = batteryVoltage
 
         while (true) {
@@ -48,8 +48,6 @@ class DataRepository : UAVRepository {
             delay(1000L)
         }
     }
-
-
 
     private fun formatTime(seconds: Int): String {
         val hrs = seconds / 3600

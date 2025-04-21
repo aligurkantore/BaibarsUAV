@@ -64,7 +64,7 @@ Lastly, all of these values were published in real-time using Flow, so that cont
 
 
 
-✅ UYGUALAMA HAKKINDA
+✅ UYGULAMA HAKKINDA
 
 Splash ekranına Lottie kütüphanesi ile dinamik bir animasyon eklenmiştir. Bu animasyon, uygulamanın açılışında kullanıcılara görsel olarak dikkat çekici bir deneyim sunar. 
 Ana sayfada ise, gelen enlem, boylam ve yükseklik verilerine göre bir drone animasyonu oluşturulmuştur. Drone, verilerin değişimine bağlı olarak yükselip alçalarak sağa sola hareket eder 
@@ -120,7 +120,7 @@ Bu özellikler, uygulamanın etkileşimini artırırken, verilerin daha anlaşı
 ✅ SAHTE VEVRİ ÜRETİMİ
 
 Bu sahte verileri elde etmek için birkaç farklı yaklaşım kullanıldı. İlk olarak, GPS koordinatları için Random.nextDouble() fonksiyonunu kullanılarak, 
-başlangıçtaki koordinatları değiştirildi (±0.01 derece). Yükseklik değeri de (100..150).random() gibi bir aralıkla rastgele seçildi. 
+başlangıçtaki koordinatları değiştirildi (±0.01 derece). Yükseklik değeri de (10..25).random() gibi bir aralıkla rastgele seçildi. 
 Pil voltajı içinse her saniyede küçük bir azalma yaparak, voltajı Random.nextFloat() ile güncellenildi. Bu güncellemeler her 5 saniyede bir gerçekleşti. 
 Zamanın ilerlemesiyle uçuş süresi de her saniye arttı ve formatTime fonksiyonu ile hh:mm:ss formatında gösterildi. 
 Son olarak, tüm bu veriler Flow ile gerçek zamanlı olarak yayımlandı, böylece sürekli değişen veriler elde edildi.
